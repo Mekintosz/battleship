@@ -7,4 +7,12 @@ function ship(length) {
     return { hit, isSunk }
 }
 
-export {ship}
+
+function gameboard() {
+    const board = new Array(10).fill('whatever').map(() => new Array(10).fill(0) )
+
+    return { board }
+}
+console.log(gameboard().board)
+
+// export {ship}
