@@ -4,7 +4,7 @@
   "description": "Battleship browser game with full unit test suite.",
   "main": "script.js",
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "author": "Michał Łazicki",
   "license": "ISC",
