@@ -1,4 +1,4 @@
-import { ship } from './script'
+import { ship } from '../script'
 
 test('ship with length 2 return isSunk === true after 2 hits', () => {
     const small = ship(2)
