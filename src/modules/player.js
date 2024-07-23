@@ -1,12 +1,13 @@
 import gameBoard from "./gameBoard"
 
-export default function player() {
-    const type = "human"
-    const createGameBoard = () => gameBoard().getBoard()
+export default function player(type = "human") {
 
-     const getPlayerBoard = () => gameBoard
 
-return { getPlayerBoard, createGameBoard }
+    const playersGameBoard = () => gameBoard().getBoard()
 
+     const player = () => createGameBoard
+     const getType = () => type
+
+return { getPlayerBoard, playersGameBoard, getType }
 
 }

@@ -35,3 +35,9 @@ test('getPlayerBoard return array with "o"', () => {
     const board = player().createGameBoard()
     expect(board).toContainEqual(["o", "o", "o", "o", "o", "o", "o", "o", "o", "o"])
 })
+
+test('setShipOnBoard place a ship at given coordinates', () => {
+  const board = player().createGameBoard()
+  const placement = gameBoard().setShipOnBoard([2,3], "v", ship(4))
+  expect(board[2]).toContainEqual(["o", "o", "o", "x", "x", "x", "x", "o", "o", "o"])
+} )
